@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import './CustomerInfo/CustomerInfo';
 
 function App() {
 
