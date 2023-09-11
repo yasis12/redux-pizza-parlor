@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import './CustomerInfo/CustomerInfo';
+import CustomerInfo from './CustomerInfo/CustomerInfo';
+import selectPizza from './SelectPizza/SelectPizza';
 
 function App() {
 
