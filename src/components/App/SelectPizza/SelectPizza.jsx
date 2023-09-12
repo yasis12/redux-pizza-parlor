@@ -1,9 +1,11 @@
 
 
-function selectPizza() {
+function SelectPizza() {
     
-
+return (
+    <h1>SELECT THE PIZZA</h1>
+)
     
 } // END SELECT PIZZA
 
-export default selectPizza;
+export default SelectPizza;
