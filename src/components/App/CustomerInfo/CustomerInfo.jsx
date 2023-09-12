@@ -47,6 +47,36 @@ const addCustomer = (event) => {
   });
 };
 
+return (
+  
+  <form onSubmit={(event) => addCustomer(event)}>
+    <input
+      onChange={handleNameChange}
+      type='text'
+      placeholder='Name'
+      />
+    <input 
+    onChange={handleAddressChange}
+    type='text'
+    placeholder='Street Address'
+    />
+    <input
+    onChange={handleCityChange}
+    type='text'
+    placeholder='City'
+    />
+    <input
+    onChange={handleZipChange}
+    type='text'
+    placeholder='Zip'
+    />
+    <button type='submit'>Next</button>
+  </form>
+  
+  
+
+)
+
 
 
 }
