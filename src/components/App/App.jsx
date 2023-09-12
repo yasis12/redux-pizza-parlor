@@ -2,6 +2,7 @@ import axios from 'axios';
 import './App.css';
 import CustomerInfo from './CustomerInfo/CustomerInfo';
 import SelectPizza from './SelectPizza/SelectPizza';
+import Checkout from '../Checkout/Checkout';
 
 // React Imports
 import React from 'react';
@@ -28,6 +29,14 @@ function App() {
 
           <Route path="/SelectPizza" >
               <SelectPizza />
+          </Route>
+
+          <p>
+              <Link to="/Checkout"> Checkout</Link>
+          </p>
+
+          <Route path="/Checkout" >
+              <Checkout  />
           </Route>
       </Router>
 

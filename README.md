@@ -13,7 +13,7 @@ Right now, the owner enters all of the orders in SQL, but they want any of their
 **Start your server**
 
 ```
-npm install
+npm install //Done
 npm run server
 ```
 
