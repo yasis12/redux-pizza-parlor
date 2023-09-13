@@ -1,0 +1,60 @@
+#checkoutInfo h1{ 
+    text-align: left;
+    margin-left: 10px; 
+}
+#orderData{
+    margin-top: 10%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font: 16px sans-serif;
+    margin-left: 10%;
+    width: 80%; 
+    
+}
+
+th, 
+td {
+    border: 1px solid black;
+    padding: 2px 8px 0;
+    text-align: left;
+    height: 50px; 
+}
+
+thead > tr > th {
+    background-color:  lightgray;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+
+#checkoutButton{
+    gap: 1rem;
+    background-color:lightgray;
+    font-weight: 400;
+    margin-top: 80px; 
+    margin-left: 80%; 
+}
+
+
+
+#checkoutButton:hover{
+    background-color: #444;
+    
+}
+
+#returnButton{
+    gap: 1rem;
+    background-color:lightgray;
+    font-weight: 400;
+    text-align: center;
+    margin-top: auto ;
+    
+}
+
+
+
+#returnButton:hover{
+    background-color: #444;
+    
+}
