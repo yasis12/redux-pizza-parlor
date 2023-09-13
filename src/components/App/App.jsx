@@ -31,6 +31,7 @@ function App() {
               <SelectPizza />
           </Route>
 
+        {/*temproary link to get to checkout faster- will get removed.  */}
           <p>
               <Link to="/Checkout"> Checkout</Link>
           </p>
