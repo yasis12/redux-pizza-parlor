@@ -1,0 +1,50 @@
+/* Add this CSS to your stylesheet */
+
+.pizzaGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Gap between grid items */
+  }
+  
+  .pizza-card {
+    border: 1px solid black; /* Black border for each pizza card */
+    padding: 20px; /* Add padding inside the card */
+    text-align: center; /* Center-align the content within each card */
+  }
+  
+  .pizza-image {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto;
+  }
+  
+  /* Add any additional styling you want for pizza name, description, price, and button */
+  .pizza-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .pizza-description {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .pizza-price {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart-button {
+    background-color: #FF5722; /* Example button background color */
+    color: white; /* Example button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Add any additional styling for the button hover state if needed */
+  .add-to-cart-button:hover {
+    background-color: #E64A19; /* Example button background color on hover */
+  }
+  
