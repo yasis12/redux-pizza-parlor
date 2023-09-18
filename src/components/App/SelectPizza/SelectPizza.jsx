@@ -23,7 +23,6 @@ const fetchPizza = () => {
 useEffect((error) => {
     fetchPizza();
 }, []);
-
     
 return (
     <Router >
