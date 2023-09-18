@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './App.css';
 import CustomerInfo from '../CustomerInfo/CustomerInfo';
-import SelectPizza from './SelectPizza/SelectPizza';
+import SelectPizza from '../SelectPizza/SelectPizza';
 import Checkout from '../Checkout/Checkout';
 
 // React Imports
