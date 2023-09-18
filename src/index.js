@@ -20,6 +20,12 @@ const pizzaSelector = (state = [], action) => {
 
 
 // Reducer Customer info
+const customerInfo = (state = [], action) => {
+  if(action.type === 'SET_CUSTOMERINFO'){
+    return action.payload
+  }
+  return state;
+}
 
 
 
@@ -27,7 +33,8 @@ const pizzaSelector = (state = [], action) => {
 // Redux Store
 const reduxStore = createStore(
     combineReducers({
-        pizzaSelector
+        pizzaSelector,
+        customerInfo
     }),
     applyMiddleware(logger)
   );
