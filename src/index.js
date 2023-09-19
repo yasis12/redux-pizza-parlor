@@ -19,6 +19,8 @@ const pizzaSelector = (state = [], action) => {
 const cart = (state = [], action) => {
   // TODO: Save Products added to the cart 
   if(action.type === 'ADD_TO_CART') {
+      const { id, name, price } = action.payload;
+      const newItem = { id, name, price };
       return [...state, action.payload]
     } else if (action.type === 'CLEAR_CART') {
       // leaving this code in if I add the button later
