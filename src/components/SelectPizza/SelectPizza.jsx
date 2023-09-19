@@ -35,7 +35,6 @@ const addProductToCart = (pizzaId) => {
 useEffect((error) => {
     fetchPizza();
 }, []);
-
     
 return (
     <div>
