@@ -1,5 +1,5 @@
 // other component import
-import CustomerInfo from "../CustomerInfo/CustomerInfo";
+import CustomerInfo from "../../CustomerInfo/CustomerInfo";
 // React Imports
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Route, Link} from 'react-router-dom';
