@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import './SelectPizza.css'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function SelectPizza() {
 
     const dispatch = useDispatch();
+
+    const cart = useSelector( store => store.cart);
 
     const [pizza, setPizza] = useState([]);
 
@@ -27,7 +29,7 @@ const addProductToCart = (pizzaId) => {
     const selectedPizza = pizza.find((pizzaItem) => pizzaItem.id === pizzaId);
     if (selectedPizza) {
       dispatch({ type: 'ADD_TO_CART', payload: selectedPizza });
-      console.log('Cart after adding:', getState().cart)
+      console.log('This is what is in the cart', cart);
     }
   };
   
