@@ -3,8 +3,11 @@ import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import './SelectPizza.css'
+import { useDispatch } from 'react-redux';
 
 function SelectPizza() {
+
+    const dispatch = useDispatch();
 
     const [pizza, setPizza] = useState([]);
 
@@ -19,6 +22,15 @@ const fetchPizza = () => {
       console.log(error);
     })
 }
+
+const addProductToCart = (pizzaId) => {
+    const selectedPizza = pizza.find((pizzaItem) => pizzaItem.id === pizzaId);
+    if (selectedPizza) {
+      dispatch({ type: 'ADD_TO_CART', payload: selectedPizza });
+      console.log('Cart after adding:', getState().cart)
+    }
+  };
+  
 
 useEffect((error) => {
     fetchPizza();
@@ -36,7 +48,7 @@ return (
                 <h2 className="pizza-name">{pizzaItem.name}</h2>
                 <p className="pizza-description">{pizzaItem.description}</p>
                 <p className="pizza-price">${pizzaItem.price}</p>
-                <button className="add-to-cart-button" onClick={() => addToCart(pizzaItem)}>Add to Cart</button>
+                <button className="add-to-cart-button" onClick={() => addProductToCart(pizzaItem.id)}>Add to Cart</button>
                 </div>
             ))}
         </div>
