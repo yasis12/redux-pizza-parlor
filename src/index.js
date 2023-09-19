@@ -15,17 +15,7 @@ const pizzaSelector = (state = [], action) => {
     }
     return state;
   }
-// Reducer For the cart
-const cart = (state = [], action) => {
-  // TODO: Save Products added to the cart 
-  if(action.type === 'ADD_TO_CART') {
-      return [...state, action.payload]
-    } else if (action.type === 'CLEAR_CART') {
-      // leaving this code in if I add the button later
-      return [];
-    }
-  return state;
-};
+// Reducer Check out
 
 
 
@@ -41,9 +31,7 @@ const customerInfo = (state = [], action) => {
 // Redux Store
 const reduxStore = createStore(
     combineReducers({
-        pizzaSelector,
-        cart,
-        customerInfo
+        pizzaSelector
     }),
     applyMiddleware(logger)
   );
